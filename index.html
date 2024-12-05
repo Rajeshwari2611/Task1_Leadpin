@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kitty food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrap">
+
+    
+    <header>
+        <div class="header-left">
+            <a href="logo" >
+            <img src="logo.webp" width="40pt" height="30" alt="">
+            </a>
+            <div class="divider hide-mobile">
+
+            </div>
+            <a href="#" class="home">Home</a>
+        </div>
+        <nav>
+            <a href="#" class="menu-open hide-desktop">
+                <img src="menu.svg" alt="Open menu">
+            </a>
+            <ul>
+                <li>
+                    <a href="#" class="menu-close">
+                        <img src="close.svg" alt="Close menu">
+                        </a>
+                        <li> <a href="#">Product</a></li>
+                        <li> <a href="#">Contact</a></li>
+                        <li> <a href="#">Blog</a></li>
+                        <li> <a href="#">About Us</a></li>
+
+            
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1> Find the Best Food For Your Pet<img src="bonkers.svg" alt="Text that says bonkers"></h1>
+        <p class=""subhead">
+            Your pet deserves a best quality food and healthy.
+            So we have the best pet food to offer with affortable price
+        </p>
+        <a href="#" class="primary-cta">Shop Now</a>
+    
+
+    </main>
+    <div class="dog-container">
+        <div class="dog">
+            <img src="pngtree-dog-cute-portrait-with-name-text-smiley-bown-head-cartoon-round-png-image_12772015.png" alt="Dog illustration">
+            <div class="inner-cirlce"></div>
+            <div class="outer-cirlce"></div>
+        </div>
+    </div>
+</div>
+<script>
+
+    const menu = document.querySelector('nav ul');
+    const menuBtn = document.querySelector('.menu-open');
+    const closeBtn = document.querySelector('.menu-close');
+
+    menuBtn.addEventListener('click', () => {
+        menu.classList.add('open')
+    })
+
+    closeBtn.addEventListener('click', () => {
+        menu.classList.remove('open')
+    })
+
+</script>
+</body>
+</html>
